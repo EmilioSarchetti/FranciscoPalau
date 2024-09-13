@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 75vh;
+    height: 60vh;
     overflow-y: auto; /* Habilita el scroll vertical si el contenido desborda */
     overflow-x: hidden; /* Evita el scroll horizontal innecesario */
 }
