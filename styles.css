@@ -1,0 +1,74 @@
+body {
+    font-family: 'Sofadi One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #504e4e;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 75vh;
+    overflow-y: auto; /* Habilita el scroll vertical si el contenido desborda */
+    overflow-x: hidden; /* Evita el scroll horizontal innecesario */
+}
+
+.side-image {
+    width: 30%;
+}
+
+.side-image img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-container {
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.menu-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #292626;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Sofadi One', sans-serif;
+}
+
+.menu-btn:hover {
+    background-color: #7d2424;
+}
+
+.menu-content {
+    display: none;
+    background-color: #654a4a;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 5px solid #4a3838;
+    color: rgb(226, 219, 219);
+    border-radius: 10px;
+    font-size: 20px; /* Aquí puedes aumentar el tamaño de la letra */
+    font-family: 'Verdana', sans-serif;
+}
+
+.menu-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-content li {
+    padding: 5px 0;
+}
