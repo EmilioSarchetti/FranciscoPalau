@@ -10,12 +10,13 @@ body {
     justify-content: center;
     align-items: flex-start;
     height: 60vh;
-    overflow-y: auto; /* Habilita el scroll vertical si el contenido desborda */
-    overflow-x: hidden; /* Evita el scroll horizontal innecesario */
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column; /* Cambio para mejor disposición en móviles */
 }
 
 .side-image {
-    width: 30%;
+    width: 100%; /* Ajuste completo en móviles */
 }
 
 .side-image img {
@@ -24,25 +25,26 @@ body {
 }
 
 .menu-container {
-    width: 45%;
+    width: 100%; /* Se adapta al ancho del dispositivo móvil */
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     color: white;
     text-align: center;
+    margin-top: 20px;
 }
 
 .menu-btn {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: #292626;
     color: white;
     border: none;
     cursor: pointer;
     margin-bottom: 5px;
     text-align: left;
-    font-size: 30px;
+    font-size: 24px; /* Ajuste de tamaño de texto para móviles */
     font-weight: bold;
     font-family: 'Sofadi One', sans-serif;
 }
@@ -60,7 +62,7 @@ body {
     border: 5px solid #4a3838;
     color: rgb(226, 219, 219);
     border-radius: 10px;
-    font-size: 15px; /* Aquí puedes aumentar el tamaño de la letra */
+    font-size: 16px; /* Ajuste de tamaño de letra */
     font-family: 'Verdana', sans-serif;
 }
 
@@ -71,4 +73,35 @@ body {
 
 .menu-content li {
     padding: 5px 0;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-btn {
+        font-size: 20px; /* Tamaño más pequeño para móviles */
+        padding: 12px;
+    }
+
+    .menu-content {
+        font-size: 14px; /* Ajuste de contenido en móviles */
+    }
+    
+    .menu-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-btn {
+        font-size: 18px; /* Aún más pequeño para pantallas de teléfonos */
+        padding: 10px;
+    }
+
+    .menu-content {
+        font-size: 12px; /* Tamaño de contenido reducido */
+    }
+    
+    .menu-container {
+        padding: 10px;
+    }
 }
